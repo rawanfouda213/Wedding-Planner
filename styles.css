@@ -1,0 +1,164 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    background-color: #d2cbbf;
+    background-size:50%;
+    height: 50%;
+    background-position: center;
+
+}
+body[id="home"]{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    background: url(background.jpeg);
+    background-size:50%;
+    height: 50%;
+    background-position: center;
+
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+   
+}
+nav ul li{
+    padding: 15px;
+}
+nav ul li a{
+     text-decoration: none; 
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-out;
+  
+  
+  
+}
+nav ul li a:hover{
+ 
+    color: #928168;
+   
+
+}
+header{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+h2{
+position: absolute;
+top: 210px;
+color:#8c8c7c;
+font-size: 65px;
+font-family:serif;
+left: 400px;
+
+}
+h4{
+    color: #928168;
+    top: 390px;
+    position: absolute;
+    left: 490px;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+h3{
+   
+        color: #928168;
+        top: 340px;
+        position: absolute;
+        left: 460px;
+        font-family: sans-serif;
+        font-size: 30px;
+    
+    
+}
+
+h1{
+    color:#e5c791;
+    text-align :center;
+}
+input[type="button"]
+{
+    top: 460px;
+    left: 650px;
+    position:absolute;
+    width: 130px;
+    height: 35px;
+    background: #8c847c;
+    border: none;
+    outline: none;
+    color: #efecdb;
+    border-radius: 15px;
+    font-size: 20px;
+    /* top:500px; */
+}
+input[type="button"]:hover{
+    background:#aca49c;
+    color: #928168;
+}
+p[id="message"]{
+    position: absolute;
+  top: 210px;
+  left: 55px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+h3[id="0"]{
+   
+    color: #928168;
+    top: 120px;
+    position: absolute;
+    left: 1020px;
+    font-family: sans-serif;
+    font-size: 30px;
+
+
+}
+p[id="1"]{
+    top: 200px;
+     left: 850px; 
+    color: #8c847c;
+    cursor: pointer;
+    position:absolute;
+    font-size: 25px;
+}
+p[id="2"]{
+     top: 270px;
+     left: 850px;  
+    color: #8c847c;
+    cursor: pointer;
+    position:absolute;
+    font-size: 25px;
+    
+}
+p[id="3"]{
+     top: 370px;
+     left: 850px;  
+    color: #8c847c;
+    cursor: pointer;
+    position:absolute;
+    font-size: 25px;
+    
+}

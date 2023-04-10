@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+        </div>
+        <nav>
+            <ul>
+              <li><a href="home.html" ><img  src="D:\Searches\images\icons8-home-page-30.png" width="20" height="20"   class="img-fluid" >Home</a></li>
+              <li><a href="about.html"><img  src="D:\Searches\images\icons8-info-50.png" width="20" height="20"   class="img-fluid" >About</a></li>
+              <li><a href="halls.html"><img  src="D:\Searches\images\icons8-more-details-50.png" width="20" height="20"   class="img-fluid" >Hall Details</a></li>
+              <li><a href="meals.html"><img  src="D:\Searches\images\icons8-restaurant-menu-30.png" width="20" height="20"   class="img-fluid" >Meals Menu</a></li>
+              <li><a href="Photo.html"><img  src="D:\Searches\images\icons8-lipstick-30.png" width="20" height="20"   class="img-fluid" >MakeUp Artists</a></li>
+              <li><a href="grid.html"><img  src="D:\Searches\images\icons8-slr-camera-30.png" width="20" height="20"   class="img-fluid" >Photographer</a></li>
+              <li><a href="https://www.jotform.com/build/230607030918551"><img  src="D:\Searches\images\icons8-reserve-50.png" width="20" height="20"   class="img-fluid" >Book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <input   onkeyup="search()" type="text" id="myinput" name="search" placeholder="search..."
+        style="width:500px; height: 40px; border-radius: 4px; font-size: 18px;margin-top: 20px; margin-left: 500;">
+        <br>
+            <section class="image-grid">
+                <div class="container-xxl">
+                  <div class="row gy-4" id="mdb-lightbox-ui">
+                   
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <figure>
+                        <a class="d-block" href="D:\Searches\images\salma.jpeg">
+                          <img width="300" height="300" src="D:\Searches\images\salma.jpeg"  class="img-fluid" >
+                        </a>
+                      </figure>
+                      <h4 style=" left: 130px;  top: 410px;" class="name">Salma Samir</h4>
+                      <a href="salma.html">
+                        <input type="button" value="more details" style=" top: 470px; left: 130px;">
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4" >
+                      <figure>
+                        <a class="d-block" href="D:\Searches\images\sherin.jpeg">
+                          <img width="300" height="300" src="D:\Searches\images\sherin.jpeg" style="margin-left: 380; margin-top: -310;">
+                        </a>
+                      </figure>
+                      <h4 style=" left: 520px;  top: 410px;" class="name">Sherin Adel</h4>
+                      <a href="sherin.html">
+                        <input type="button" value="more details" style=" top: 470px; left: 510px;">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="D:\Searches\images\donia.jpeg">
+                            <img width="300" height="300" src="D:\Searches\images\donia.jpeg" style="margin-left: 760; margin-top: -320;" class="img-fluid">
+                          </a>
+                        </figure>
+                        <h4 style=" left: 900px;  top: 415px;" class="name">Donia AboNar</h4>
+                        <a href="donia.html">
+                          <input type="button" value="more details" style=" top: 470px; left: 900px;">
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="D:\Searches\images\alaa2.jpeg">
+                            <img width="300" height="300" src="D:\Searches\images\alaa2.jpeg" style="margin-left: 1110; margin-top: -335;" class="img-fluid" >
+                          </a>
+                        </figure>
+                        <h4 style=" left: 1235px;  top: 415px;" class="name">Alaa Saeed</h4>
+                        <a href="alaa.html">
+                          <input type="button" value="more details" style=" top: 470px; left: 1235px;">
+                      </div>
+                     
+                  </div>
+                </div>
+              </section>
+              <script>
+
+       function search() {
+    let input = document.getElementById('myinput').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('name');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+            </script>
+</body>
+
+</html>
